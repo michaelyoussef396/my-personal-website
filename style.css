@@ -45,3 +45,18 @@ h2 {
 h3 {
     color: #333;
 }
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea {
+    display: block;
+    margin-bottom: 10px;
+}
