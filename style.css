@@ -55,24 +55,6 @@ h3 {
     text-align: center;
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-input {
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-textarea {
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
 button {
     background-color: #333;
     color: white;
@@ -88,4 +70,22 @@ footer {
     text-align: center;
     padding: 10px 0;
     text-align: center;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
 }
