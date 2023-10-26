@@ -101,3 +101,24 @@ input[type="text"]::placeholder,
 textarea::placeholder {
     color: #aaa;
 }
+
+.centered-container {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    /* Center the text horizontally */
+}
+
+.centered-container img {
+    display: block;
+    /* Make the image a block element */
+    margin: 0 auto;
+    /* Center the image horizontally */
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the container's width */
+}
+
+.centered-container p {
+    text-align: left;
+    /* Adjust text alignment as needed */
+}
