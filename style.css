@@ -106,22 +106,39 @@ textarea::placeholder {
     margin: 0 auto;
     width: 500px;
     text-align: center;
-    /* Center the text horizontally */
 }
 
 .centered-container img {
     display: block;
-    /* Make the image a block element */
     margin: 0 auto;
-    /* Center the image horizontally */
     max-width: 100%;
-    /* Ensure the image doesn't exceed the container's width */
 }
 
 .padded-20 {
     padding: 20px;
 }
 
-.copy-btn {
-    float: right;
+.professional-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.red-button {
+    background-color: #FF0000;
+}
+
+.professional-button:hover {
+    background-color: #0056b3;
+}
+
+#email {
+    width: 30%;
+    padding: 5px;
+    font-size: 16px;
 }
