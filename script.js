@@ -1,22 +1,11 @@
-
-/*i added this for the switch color feature*/
 document.addEventListener("DOMContentLoaded", function () {
+    //switch color btn
     const colorSwitchBtn = document.getElementById('colorSwitchBtn');
-    const body = document.body;
-
     colorSwitchBtn.addEventListener('click', function () {
-        body.classList.toggle('blue');
+        document.body.classList.toggle('blue');
     });
-});
 
-/*i added this for the messages button feature*/
-
-document.addEventListener('DOMContentLoaded', function () {
-    const greetingBtn = document.getElementById('btn-greeting');
-    const greetingMessage = document.getElementById('greeting-message');
-});
-
-document.addEventListener("DOMContentLoaded", function () {
+    ///gtreeting message/btn
     const greetBtn = document.getElementById('greetBtn');
     const greetingMessage = document.getElementById('greetingMessage');
 
@@ -37,33 +26,24 @@ document.addEventListener("DOMContentLoaded", function () {
             greetingMessage.style.fontWeight = '600';
         }
     });
-});
 
-
-// added for contact list
-
-document.addEventListener('DOMContentLoaded', function () {
+    //contact form
     const contactForm = document.getElementById('contact-Form');
 
     contactForm.addEventListener('submit', function (event) {
         event.preventDefault();
-
-        // Get form values
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const phone = document.getElementById('phone').value;
         const message = document.getElementById('message').value;
-
-        // Validate email using a simple regex pattern
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const isValidEmail = emailPattern.test(email);
-
-        // Validate phone number (simple validation for demonstration)
         const isValidPhone = phone.length >= 8;
 
         if (name && isValidEmail && isValidPhone && message) {
             alert(`Thank you, ${name}! I'll get in contact with you soon.`);
-            contactForm.reset(); // Reset the form
+            contactForm.reset();
         }
     });
+
 });
