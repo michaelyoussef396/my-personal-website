@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Michael Youssef</title>
 </head>
 <body>
@@ -34,6 +34,7 @@
                 <a class="linkedin" href="https://www.linkedin.com/in/michael-youssef-93625327a/">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt="LinkedIn Logo">
                 </a>
+                <i id class='bx bxl-linkedin-square'></i>
                 <a class="github" href="https://github.com/michaelyoussef396">
                     <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="Github Logo">
                 </a>
@@ -78,31 +79,31 @@
 
         <div class="skills-items">
             <div class="skills-card">
-                <img src="data:image/png;base64,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" alt="">
+                <i class='bx bxl-html5' ></i>
                 <h3>HTML</h3>
                 <p>Proficient in crafting clean and semantic HTML5 markup for modern, user-centric web experiences.</p>
             </div>
 
             <div class="skills-card">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/free-css-logo-3002030-2496146.png" alt="">
+                <i class='bx bxl-css3'></i>
                 <h3>CSS</h3>
                 <p>Proficient in leveraging CSS to design visually engaging and responsive web interfaces, ensuring seamless user experiences across multiple devices.</p>
             </div>
 
             <div class="skills-card">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/logo-javascript-logo-black-and-white.png" alt="">
+                <i class='bx bxl-javascript' ></i>
                 <h3>JavaScript</h3>
                 <p>Expert in JavaScript, leveraging its power to build dynamic, interactive applications and ensuring optimal functionality and user engagement.</p>
             </div>
 
             <div class="skills-card">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEUAAAD////o6OjIyMj6+vqWlpbf39/39/f8/Pz09PTu7u7s7Oytra20tLS8vLzV1dWhoaFlZWV9fX1gYGCHh4fZ2dlycnJKSkrOzs5ra2uNjY2oqKi/v78RERF4eHg8PDybm5slJSU1NTVVVVUtLS1DQ0MYGBhZWVkmJiYVFRVBQUFQUFAdHR0yMjKnj7hpAAAQiElEQVR4nO1daUP6PAxXkAkoyimngiee3//rPQKSpE3aJmPb/3mx3ytlW9e0ae52Z2c1atSoUaNGjRo1atSoUaNGjRplYr1ef7796078YrS8vTr/xUVjtnx4LKbN9WKVnf8h6w2KaTQfXnrnLjo381PbnN9ceo1e9Ivoay6sziWstvlbXPfaYpvj4jptwEjsyw7dRb4W55Ngk7fF9l2FVrA3O1zbGxx2Yg12i6cggU2UQDuNd1H6ftEph44gHlIE/mKjb+6rkW4uK4sWET8KAn+F4IOyuaaquV6pJHlQDPkekxdFY4vAw92uJ1hPENJWOFLm5uHz7OxxOlyKknCTauslE56atf6omdPprVDakLc6rDO44Z29WkebEiZw5VgxayKCKlOLfXzn0L92x2dyE2mK3X3FqbiCi5fF0RAH9qclXH1iExmUgsxoyCQj9D4yoOVgmOr6I6NRtp6X3l2NkdzeXXqsisUtvDAoKR9nXueXwk2eiLkIT9Ak/cZCAa9rRm56vnL7P/FvWF+4N8RsoGe4qxI3A5n0K3qfZ7hePjlX79yrjadAKweA/q2ETcFnukrc+OEJSroYPbNWklgUqFNO7LwK4KBKa8vF2KUDnSrXs+z+pBpCcXp3Wuc1+FYy6R7vrnl3XGvu5GrszcxvokTgAlLdfu0QM9v/5pKtinuAYqlgIYJBw6SjjLlDzm8H7x1P8Opb1YpxXE8CmMJafnnvUooa7w6BMYVDgQuxoHheBLAi9Gawr/4RG3UboD0Ddk+BAFFq8NZ88+wIg2DMMbB5Ad2zGFBDkcCpoQXQL6VbNW/QP9NjW07fpWlFARuUHstYH9/Utj335BNodNjBBtTKptyYHt9kje59uMF6q14D86j02DA4rQ3zow6F1ofneYfGjHluCl13albZe63I/SY/pHZje3z7v6eQB31tYn/6f6fwmhFoDCt9VUZhPkkzFgi0xbCrW4e5tEUo1Wgwi6qj8PP4pgv9M1TbX77Sf/RtQLKrdH2ILr7+Garrv3FFnVuUW3Ua/8xOIdUTn2euT6zWGRC6WuXptAlOZzWgAfCDc0ezMVpnCIRx+VnErtvbJMYCOVR3KF2o6rwnjJPpRn9KiMHwIyYGtD7Kre21p6DJ+xsDIZCaosRI1UkbeODkkqQkwBVVLXkiZZwQOcmY6UJaVq4+AbCuNGNPF9y9c4Vyr2JacETy9doCsE8UC4jqBX/sqQRKx0y3FVJoUPnfhAguIEjuIm2JmTjnVEC/kmWRJHovaXZyObkUgd1LD9OcEeGRSomRRShOEp3ilHIFZbHJ02UjwEZJCFPqUNwn70i8FEzbCrJraHMlVg/p/nA9Gt0Nf9E6YPfnYDR6JAW4cYMaRWk8V1wMMKkeuWn9HK4VldH/ikSIUSgXTo4EeJuweLbD/s2ttuqN4TKbXbfmQhEVpPSqKTcBAjbkx9eHfjM3ZT46k95i8EFah+xVNfWJIGoOa+dtvmleyT09De1Jb/h6eCUUKVZTFIXWyNmgP/Mr64tG1hu+v8N/VQias7OXkmmKwJgOyo1USXZ5qMKi+fUK+v+Owkn5G2gGvYt0Pzi63WyS3TYRk2zS6OYaqVmZwkYqAY7jbvCViPp+Pz3P++mGqiByfa2avWxF3HptT4j905x1eaMczcLZdZzU5t3Zcvi8uxV/Ugdv791nnuatG6m+3cFlv8Cte2yLmodJb4wePJkP2aOQQBx+cJUf55tZfKXOCqqt+QoX/PzOXG/ompFkM40l7kfGxb3wa1PI29n2uCpgRW7j7MIYES8p694OIN4wczsjFJ6fX+TcJ3dEgr5zxolE2r6b3kQqir2qzkGiB+0TaFwHfLzmEPNlLiuS1NnG+DIUZV6lDQxa+7knG8GdvLwqa7/DPliYW5dNsZupEmkGMjhuAAjfvLtrKQqfhqKal0FMTDePwVtU0oFn7KFpIrDpz8ikf+9+FRWzOen2LizAjHAksildBXivsZZkD5QotLvISfjbQBLvNlYV9lvduFoBfF4SVwjMghZkgwLhAPjN9Ss2nFstRUi3/sOXLDaKbAoBJOI35kuBoWDDMB6S7Wc37hibtbXFHa++xOoKHcZdpJCyxHHJWS9BhghYDvmR3//FZkKXPvV2s5x35L2uIDaPwp3Ed18DTb8NFq1WaxwUfBglh0oP+EWMQU19GjWmsL8LPaRP8b7nww8YjZLFzLSHXkO2kW1WFDb9wFt8+DZJWkt5JdmR6J1HENEU0t0D3zm5kVJqpFr6MAQwKOECpQfXqrtIuBxu/VkjtsMVGWT/L75HyNi8sRVzLi8aHIe9xviK3nyE6/rESXRZNJ5cwvW6E0S4VUsYbXdXCQ4gZ1WSGt4FDjHHGE2iTh2v+TLitTlCphPfokzYNKP/CDnr8AETPPyJVZq3tNWUBHEszPBadM4RSAfukDleCXfzzELsBA1GInGjnsmTybMLHDYJ6n5qJmySBGLZ/q+swQeZQRpg0QN4/R+OVQPljMJG+qG9DygAumBV5z2goEYmYcNHM70CuJ+M11CuqwpSqLQWI3xrcoMu0yrthGFJwFQekRnM0iESus0nRDWKWTjSFW0qmXeFKfsoj+7BWuVurjZoR2ZRqNEhZZ8bZYNC9TYT1OmcInsbPxlGXemFgyPIUxTTei+EZaFYrduzfwcH15/+qOgLrkk1Mo804jV1e9zNYjdo8gDM5/E5O1XWQoD6hWk7lBqW0JUXB+Plipr8KReUnjVt6BCx//0rMNiGCvUzYhnLXXk/V4DLPXcvnyl3j/Pvswbwvq5s9AhHtPNHfV9TBm/WmURb4BW4xuftIOkJxHsaOiDJRdQAt+4BA2b0pz7SzSiIPynMfmgDsAuhJp6IMGNcEmSNPzJ5KfyITYW43UlFIbK39VwhYJsghboTAHiDohDWZXcFN40sRGNhd3A7bTtng0QdCKUgunXIn6PC1FjoFTwRAQbNFh53LCw+ieHTIwkE/eTIUpvsC/YGV4ypPacrwiRqKOR2tasPTcIUA2J+SBNH23I+ypfTFWESNcV8G/aUZ9Mkj68hgKwN54x2nga9va98EjWihkUyfLvUkOZBVuSWEI0eaHHvdYXH/BQ1cFySsIlXd4iwN1dBeByEfsz4DLFbYmUOBzB3m5t6G2V/CA2S00z2P2jdC56qZHYNOy3CB+cYXjKk1frkSckSoiynyzZKdjUzbBK1OPy0KSn5rAurkDpeORZq3viIxiPyIufweBUXl9wo8pBWTeXKPS1UDtxDhfQm3eQjjhixTplkjAob3nVc2w2yiNO1wU90yQTnnL47bdug47Ali5jrZ09pUggWGV4cENGYVNLOigmLSidu1EhVxoFJ2nWkGDeyqLfnQGA+HKod9eqgt7PaY5asG+ONr2+0gnbeNKpTIY73IZs2wsSQsPTO6kLREJV9a2etx8/2cbMo0ewM2jP7f/EpSUoJ2ZkrKdmNYemm22pM1rhqOXV4kXdkY2To4J6ZT4N4+9JN1TbElom9dvBTkWmD0ZqRW3eSPp3Jc+myUBYRRfmfR4meYkAszG+OzDrpBzbzd/w2kkngF89o0picvh4PCFXgpwv+XLi2++Xz9fMjeJUw0PEnUHJi4PvejzjrPK1X7ykxYInCE2YM1amptJT0F18JdmOsGOOe2Usb7atYtVGPGWP4ZmBjohTy7YNE2UUWU3CcX3jG4KRjAFfeegT5T5QDigVb4PwPxPUhaZVAUdSIOy22U0++eMIhoxOD4XoaWsab8xykikqN9hUjQSRGthCMXXMtneATtJdgHiKT0vQs0RipQg4OImaclC/8ehR5A+lTCrOw/ApiKm0qzP6mDL/l4zyDQ2su3iP5ftfJRN7f/bcVv0TTyXlahhztnCy+ycC6+Q9i2Frry9EV8xYxWoejbWDX1SYffTsEovIN5BOvhoAwkI1tiDb1BbHcB8Rphye/JZK4zIzHSzbR1g4/F48ScEVmRZxGZgyQGIT2Gyw7hPdpvI6lqr8jrk+mb49ojuxq1XKKAoi1oH8DWb/E/pyOe9EdLR1Dgj+FRWKz9uVtb7E9eMwkaKEPx6PFfbBmpg/LWWp/+G3Bpw1tNd/zacyuF3QbppZPiUC77q8yRXnDxdKW+9ZhnNwExaDR+x8/umw/waq07cDv/RzHJrS73Uk2azabPYJVsznLJux7RxrMSj7e5KVln8kCcfrXB1XIMfBFoRL6/uWZCiYdmx+g1C+uCzvNJIJOs/UJIZN/cLbJ8yK97To3us3NYd1V+XmLM+l8mve7zSordHVezZZDkiDDCsFKKIS3+SWcXw+tm1njJEo72Wo5HvFYHdyQZ7OoFenj7562Dwuz5pyN59OwGQ2udRUfl4NQhf6sr9bDcLw746t/fcDu7/FwOCKOSCJ2BTZjFaIGogqJdP883X1igCYCgRDEyRmKNQHYLxWnICa4LAKJ45fy00HUVHHKkHbYnfy2xFwkuJaMW+U5gjov3vXvosYPN0ZoaVd6xwjcWr4wheWlKAGhdX2+I0VLPxS2GKyN8s8zgxCjZs2TpehLG2IJacohQZiWfxY0RL5UlVNEK7rShtCu2jCyNL32JEBGRBUGIhUMzlTRYLOqUjBY3Fw8gLt0jgyVJxvxV2P9VenfRkAtHdg+7oPWKBzjD4/kN6WRAunu8r+YC13TfpyCBun+RD2pLdBOCQ5Knk5bkONgbRr43A8LdSjVMevKKHyyv+me+FM7nUEnVb9dBB4xbpcwI89XWGjpQ9fJZxl8IcirWaq+8yDX915oyJfyrMUVAgrLPlg/39fB5C35Jk+oUzmFtvTgSiDQ9vW8RlUUDvNRyI8tshw6uMP/nkK+xSB0TE8A1a9D81eJvKOrrKc6/s8lzR4OieYEEjxZtj7M/3Uwdx+b2UXIuXztyP2VTv+kBGPQrLpAzU/ON/HqIxsT/AvfwvSUVHrUsRyTCyxQfm4GOmiRaYH9XQaFAaHH8n18sCsNycpgDkMvUcEoOq3GSwOYDnXQa+pko1z7Td0IDFL5qRkIemnZxd2LtnTP21K3Ag8ogycnAMw2ZaWzW2m0C9C9OKo/eWjaHlWmSNHJ13Tt07XVDnG1e7egS8N3IIvLD7WRWpNN+l5vBw7Yom7qX8GpkOSpIn8IoiY5nD+uDG2TSXd5t52q4sKNDpV+7ynFpt4+aFdVe7ObSF1IhwmXh3tdt7wNV+xmf9N9NPQNd5X/JdkdcBGFHZkf36fnCeMnbwiysIWDddBVfysoNKJvfljmQtyr5ttyzUAYnWy7LIiEFPCFoqB/YmGnkLBkITiZRlQu1RR9OXXfXAjOecwprPBe2ancwjcryHGHZfv3ANKjjXPhWdjykUWT9HwnQKfvbE2/J7qz/OzoEVQPdFp/a+x5IZaCp2pSRsI2mG7v4Y9dv5zNFqUS5cJjrk43dHDCrcLLDewY6WaZ1+qJH+swgW0zlaHccDXV1cBVUQ6FEL8N4UO/4WOsKGjMtWvzBKTPmrMdT5g+jEibcy4MCRJt9KUbbNu3bJ4M6RThP3TzyYRWeLNMI8cW0dPxHjgEeWU8XJLgLhCUK78QKoAts1/aq1P3Cyy4TXT6FsMT8L3AL4c1Voti8kLz5S3wa2dVjTsRx8968Bo46CI/nka/+AfipUaNGjVq1KhRo0aNGjVq1KjxP8V/kYW8DM3vjaoAAAAASUVORK5CYII=" alt="">
+                <i class='bx bxl-react' ></i>
                 <h3>React JS</h3>
                 <p>Skilled in React.js, proficiently utilizing its component-based architecture to develop scalable and interactive user interfaces, delivering modern web experiences with efficiency and elegance.</p>
             </div>
 
             <div class="skills-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlIVNP9rCyds09VY9jcVk_L7g3MhYWaGiWYsWdolTt2w&s" alt="">
+                <i class='bx bxl-github' ></i>
                 <h3>GitHub</h3>
                 <p>Proficient in GitHub, leveraging its version control and collaborative features to manage and streamline development workflows, ensuring organized and efficient project collaboration and code management.</p>
             </div>
@@ -164,5 +165,10 @@
         <hr>
         <p>Copyrights &copy; 2023 Michael Youssef</p>
     </footer>
+
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

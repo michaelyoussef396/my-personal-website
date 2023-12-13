@@ -36,6 +36,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .name {
@@ -54,7 +55,6 @@ body {
 .menu-bar a:hover {
     color: aqua;
 }
-
 
 /*social media*/
 .linkedin img {
@@ -225,11 +225,16 @@ span {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.skills-card img {
-    width: 8rem;
-    height: 6rem;
+.skills-card:hover {
+    border-radius: 1rem solid;
+    transform: scale(1.05);
+}
+
+.skills-card .bx {
+    font-size: 8rem;
 }
 
 
@@ -339,3 +344,7 @@ hr {
     background-color: #3498db;
     color: #ffffff;
 }
+
+@media (max-width: 620px) {}
+
+@media (max-width: 450px) {}
